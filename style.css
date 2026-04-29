@@ -1,0 +1,5 @@
+body {
+  max-width: 1200px;   /* 横幅制限（調整可） */
+  margin: auto;        /* 中央寄せ */
+  padding: 20px;       /* 余白 */
+}
