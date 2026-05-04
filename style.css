@@ -1,5 +1,92 @@
 body {
-  max-width: 1200px;   /* 横幅制限（調整可） */
-  margin: auto;        /* 中央寄せ */
-  padding: 20px;       /* 余白 */
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+
+  font-family:
+    "Yu Mincho",
+    "Hiragino Mincho ProN",
+    serif;
+
+  line-height: 1.8;
+  font-size: 16px;
+  color: #000000;
+}
+
+/* 見出し */
+h1 {
+  font-size: 2em;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 0.3em;
+  margin-top: 1em;
+}
+
+h2 {
+  font-size: 1.5em;
+  border-left: 6px solid #000000;
+  padding-left: 0.5em;
+  margin-top: 2em;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-top: 1.5em;
+}
+
+/* 数式 */
+.MathJax {
+  font-size: 1.05em !important;
+}
+
+/* コード */
+pre {
+  background: #f5f5f5;
+  padding: 1em;
+  overflow-x: auto;
+  border-radius: 6px;
+}
+
+code {
+  background: #f5f5f5;
+  padding: 2px 4px;
+}
+
+/* 表 */
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 0.5em;
+}
+
+/* 丸数字 */
+.circle {
+  display: inline-block;
+  border: 1px solid #333;
+  border-radius: 50%;
+  width: 1.6em;
+  height: 1.6em;
+  line-height: 1.6em;
+  text-align: center;
+  font-weight: bold;
+  margin-right: 0.4em;
+}
+
+/* PDF印刷用 */
+@media print {
+  body {
+    max-width: none;
+    margin: 20mm;
+    padding: 0;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  pre {
+    page-break-inside: avoid;
+  }
 }
